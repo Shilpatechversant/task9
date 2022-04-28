@@ -81,6 +81,9 @@ input[type=number] select {
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
   }
+  body{
+    background-color: #698bd4;
+  }
 
 
   
