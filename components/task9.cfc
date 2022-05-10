@@ -1,6 +1,6 @@
     <cffunction  name="displayFunc" access="remote">
-        <cfargument  name="key">
-        <cfargument  name="value">        
+        <cfargument  name="key" type="string" required="true">
+        <cfargument  name="value" type="string" required="true">        
             <cfif NOT StructKeyExists(Session, "mystruct" )>
                  <cflock timeout=20 scope="Session" type="Exclusive">
                     <cfset Session.mystruct=structNew()>
